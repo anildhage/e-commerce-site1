@@ -17,3 +17,12 @@ npm install tailwindcss@2.2.16
 4. open terminal and type - 'npm run build'
 
 
+# Setting the media root for images
+1. visit settings.py > add the line at the end ->   
+    MEDIA_ROOT = BASE_DIR / 'media'
+    MEDIA_URL = '/media/'
+2. visit urls.py (main project folder)  add the lines-> 
+    from django.conf import settings
+    from django.conf.urls.static import static
+
+    urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
