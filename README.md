@@ -13,7 +13,7 @@ npm install tailwindcss@2.2.16
 # Compile
 1. Create folder in static > 'appname' > src folder > tw.css
 2. add @tailwind base; @tailwind components; @tailwind utilities; to tw.css file
-3. Go to package.json > script > add this line {k:v} > example: "build": "tailwind  build 'addappnamehere'/static/app1/src/tw.css -o app1/static/app1/styles.css"
+3. Go to package.json > script > add this line {k:v} > example: "build": "tailwind  build 'addappnamehere'/static/'addappnamehere'/src/tw.css -o app1/static/app1/styles.css"
 4. open terminal and type - 'npm run build'
 
 
